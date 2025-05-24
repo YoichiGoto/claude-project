@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスク管理アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 タスク管理アプリ</h1>
+            <div class="stats">
+                <span id="total-tasks">0</span> 件のタスク
+                (<span id="completed-tasks">0</span> 完了, <span id="pending-tasks">0</span> 未完了)
+            </div>
+        </header>
+
+        <div class="add-task-section">
+            <form id="add-task-form">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="新しいタスクを入力してください..."
+                    required
+                >
+                <button type="submit">➕ 追加</button>
+            </form>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="pending">未完了</button>
+                <button class="filter-btn" data-filter="completed">完了済み</button>
+            </div>
+            <button id="clear-completed" class="clear-btn">🗑️ 完了済みを削除</button>
+        </div>
+
+        <div class="tasks-section">
+            <ul id="tasks-list"></ul>
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <p>📋 タスクがありません</p>
+                <small>上のフォームから新しいタスクを追加してください</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
