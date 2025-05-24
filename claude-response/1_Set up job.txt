@@ -1,0 +1,38 @@
+﻿2025-05-24T08:06:22.6389879Z Current runner version: '2.324.0'
+2025-05-24T08:06:22.6414193Z ##[group]Runner Image Provisioner
+2025-05-24T08:06:22.6415204Z Hosted Compute Agent
+2025-05-24T08:06:22.6415802Z Version: 20250508.323
+2025-05-24T08:06:22.6416398Z Commit: 81b259f29879f73b4213d199e42d8c3465dae986
+2025-05-24T08:06:22.6417338Z Build Date: 2025-05-08T19:40:08Z
+2025-05-24T08:06:22.6418002Z ##[endgroup]
+2025-05-24T08:06:22.6418537Z ##[group]Operating System
+2025-05-24T08:06:22.6419146Z Ubuntu
+2025-05-24T08:06:22.6419630Z 24.04.2
+2025-05-24T08:06:22.6420042Z LTS
+2025-05-24T08:06:22.6420522Z ##[endgroup]
+2025-05-24T08:06:22.6420990Z ##[group]Runner Image
+2025-05-24T08:06:22.6421567Z Image: ubuntu-24.04
+2025-05-24T08:06:22.6422108Z Version: 20250511.1.0
+2025-05-24T08:06:22.6423107Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250511.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-05-24T08:06:22.6424461Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250511.1
+2025-05-24T08:06:22.6425702Z ##[endgroup]
+2025-05-24T08:06:22.6426733Z ##[group]GITHUB_TOKEN Permissions
+2025-05-24T08:06:22.6428813Z Contents: write
+2025-05-24T08:06:22.6429372Z Issues: write
+2025-05-24T08:06:22.6429809Z Metadata: read
+2025-05-24T08:06:22.6430450Z ##[endgroup]
+2025-05-24T08:06:22.6432464Z Secret source: Actions
+2025-05-24T08:06:22.6433477Z Prepare workflow directory
+2025-05-24T08:06:22.6768153Z Prepare all required actions
+2025-05-24T08:06:22.6804576Z Getting action download info
+2025-05-24T08:06:22.9603120Z Download action repository 'anthropics/claude-code-action@beta' (SHA:8e84799f37d42f24e0ebae41205346879bdcab5a)
+2025-05-24T08:06:23.4970837Z Getting action download info
+2025-05-24T08:06:23.6434829Z Download action repository 'oven-sh/setup-bun@v2' (SHA:735343b667d3e6f658f44d0eca948eb6282f2b76)
+2025-05-24T08:06:24.0395892Z Download action repository 'anthropics/claude-code-base-action@beta' (SHA:f99496e33ac73692b674913c57e0a58e6dacc8b1)
+2025-05-24T08:06:24.4622079Z Getting action download info
+2025-05-24T08:06:24.6018606Z ##[group]Download immutable action package 'actions/setup-node@v4'
+2025-05-24T08:06:24.6020420Z Version: 4.4.0
+2025-05-24T08:06:24.6022000Z Digest: sha256:9427cefe82346e992fb5b949e3569b39d537ae41aa3086483b14eceebfc16bc1
+2025-05-24T08:06:24.6023904Z Source commit SHA: 49933ea5288caeca8642d1e84afbd3f7d6820020
+2025-05-24T08:06:24.6025232Z ##[endgroup]
+2025-05-24T08:06:24.8122994Z Complete job name: claude-response

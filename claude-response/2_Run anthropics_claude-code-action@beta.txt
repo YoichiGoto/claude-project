@@ -1,0 +1,103 @@
+﻿2025-05-24T08:06:24.9054263Z ##[group]Run anthropics/claude-code-action@beta
+2025-05-24T08:06:24.9055580Z with:
+2025-05-24T08:06:24.9057740Z   anthropic_api_key: ***
+2025-05-24T08:06:24.9058780Z   github_token: ***
+2025-05-24T08:06:24.9059479Z   trigger_phrase: @claude
+2025-05-24T08:06:24.9060256Z   use_bedrock: false
+2025-05-24T08:06:24.9060967Z   use_vertex: false
+2025-05-24T08:06:24.9061657Z   timeout_minutes: 30
+2025-05-24T08:06:24.9062606Z ##[endgroup]
+2025-05-24T08:06:24.9192542Z ##[group]Run oven-sh/setup-bun@v2
+2025-05-24T08:06:24.9193412Z with:
+2025-05-24T08:06:24.9194026Z   bun-version: 1.2.11
+2025-05-24T08:06:24.9194751Z   no-cache: false
+2025-05-24T08:06:24.9195409Z ##[endgroup]
+2025-05-24T08:06:25.2167649Z Downloading a new version of Bun: https://bun.sh/download/1.2.11/linux/x64?avx2=true&profile=false
+2025-05-24T08:06:26.2715128Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/85a78741-258f-4a88-8c84-575987cc2f71.zip
+2025-05-24T08:06:27.0210146Z [command]/home/runner/.bun/bin/bun --revision
+2025-05-24T08:06:27.0246847Z 1.2.11+cb6abd211
+2025-05-24T08:06:27.0431079Z ##[group]Run cd /home/runner/work/_actions/anthropics/claude-code-action/beta
+2025-05-24T08:06:27.0431709Z [36;1mcd /home/runner/work/_actions/anthropics/claude-code-action/beta[0m
+2025-05-24T08:06:27.0432090Z [36;1mbun install[0m
+2025-05-24T08:06:27.0620872Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-05-24T08:06:27.0621322Z ##[endgroup]
+2025-05-24T08:06:27.0742112Z bun install v1.2.11 (cb6abd21)
+2025-05-24T08:06:27.3981738Z 
+2025-05-24T08:06:27.3982318Z + @types/bun@1.2.11
+2025-05-24T08:06:27.3983122Z + @types/node@20.17.44
+2025-05-24T08:06:27.3983496Z + @types/node-fetch@2.6.12
+2025-05-24T08:06:27.3983863Z + prettier@3.5.3
+2025-05-24T08:06:27.3984174Z + typescript@5.8.3
+2025-05-24T08:06:27.3984491Z + @actions/core@1.11.1
+2025-05-24T08:06:27.3984833Z + @actions/github@6.0.1
+2025-05-24T08:06:27.3985222Z + @modelcontextprotocol/sdk@1.11.0
+2025-05-24T08:06:27.3985626Z + @octokit/graphql@8.2.2
+2025-05-24T08:06:27.3986050Z + @octokit/rest@21.1.1
+2025-05-24T08:06:27.3986406Z + @octokit/webhooks-types@7.6.1
+2025-05-24T08:06:27.3986760Z + node-fetch@3.3.2
+2025-05-24T08:06:27.3987235Z + zod@3.24.4
+2025-05-24T08:06:27.3987403Z 
+2025-05-24T08:06:27.3987562Z 141 packages installed [325.00ms]
+2025-05-24T08:06:27.4148493Z ##[group]Run bun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/prepare.ts
+2025-05-24T08:06:27.4149214Z [36;1mbun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/prepare.ts[0m
+2025-05-24T08:06:27.4203935Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-05-24T08:06:27.4204254Z env:
+2025-05-24T08:06:27.4204429Z   TRIGGER_PHRASE: @claude
+2025-05-24T08:06:27.4204632Z   ASSIGNEE_TRIGGER: 
+2025-05-24T08:06:27.4204826Z   ALLOWED_TOOLS: 
+2025-05-24T08:06:27.4205020Z   CUSTOM_INSTRUCTIONS: 
+2025-05-24T08:06:27.4205205Z   DIRECT_PROMPT: 
+2025-05-24T08:06:27.4205662Z   OVERRIDE_GITHUB_TOKEN: ***
+2025-05-24T08:06:27.4205885Z   GITHUB_RUN_ID: 15225071784
+2025-05-24T08:06:27.4206083Z ##[endgroup]
+2025-05-24T08:06:27.5131507Z Using provided GITHUB_TOKEN for authentication
+2025-05-24T08:06:27.5148678Z Checking permissions for actor: YoichiGoto
+2025-05-24T08:06:27.6492591Z Permission level retrieved: admin
+2025-05-24T08:06:27.6492976Z Actor has write access: admin
+2025-05-24T08:06:27.6495349Z Issue body contains exact trigger phrase '@claude'
+2025-05-24T08:06:27.7295664Z Actor type: User
+2025-05-24T08:06:27.7296160Z Verified human actor: YoichiGoto
+2025-05-24T08:06:28.0898794Z ✅ Created initial comment with ID: 2906612232
+2025-05-24T08:06:28.2358065Z Successfully fetched issue #2 data
+2025-05-24T08:06:28.3588748Z Creating new branch for issue #2...
+2025-05-24T08:06:28.4613098Z Current SHA: a24fda01e2ef90df9f6339892dee8ec401f316e6
+2025-05-24T08:06:28.8378792Z fatal: not a git repository (or any of the parent directories): .git
+2025-05-24T08:06:28.8389742Z Error creating branch:  97 |       ref: `refs/heads/${newBranch}`,
+2025-05-24T08:06:28.8390417Z  98 |       sha: currentSHA,
+2025-05-24T08:06:28.8391193Z  99 |     });
+2025-05-24T08:06:28.8391511Z 100 | 
+2025-05-24T08:06:28.8391832Z 101 |     // Checkout the new branch
+2025-05-24T08:06:28.8392338Z 102 |     await $`git fetch origin ${newBranch}`;
+2025-05-24T08:06:28.8392832Z                      ^
+2025-05-24T08:06:28.8393221Z ShellError: Failed with exit code 128
+2025-05-24T08:06:28.8393683Z  exitCode: 128,
+2025-05-24T08:06:28.8394000Z    stdout: "",
+2025-05-24T08:06:28.8394586Z    stderr: "fatal: not a git repository (or any of the parent directories): .git\n",
+2025-05-24T08:06:28.8395261Z 
+2025-05-24T08:06:28.8395446Z       at new ShellError (13:16)
+2025-05-24T08:06:28.8395944Z       at new ShellPromise (75:16)
+2025-05-24T08:06:28.8396454Z       at BunShell (191:35)
+2025-05-24T08:06:28.8397762Z       at setupBranch (/home/runner/work/_actions/anthropics/claude-code-action/beta/src/github/operations/branch.ts:102:11)
+2025-05-24T08:06:28.8398856Z 
+2025-05-24T08:06:28.8450057Z ##[error]Process completed with exit code 1.
+2025-05-24T08:06:28.8540187Z ##[group]Run bun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/update-comment-link.ts
+2025-05-24T08:06:28.8540986Z [36;1mbun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/update-comment-link.ts[0m
+2025-05-24T08:06:28.8590691Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-05-24T08:06:28.8591002Z env:
+2025-05-24T08:06:28.8591206Z   REPOSITORY: YoichiGoto/claude-project
+2025-05-24T08:06:28.8591446Z   PR_NUMBER: 2
+2025-05-24T08:06:28.8591635Z   CLAUDE_COMMENT_ID: 2906612232
+2025-05-24T08:06:28.8592052Z   GITHUB_RUN_ID: 15225071784
+2025-05-24T08:06:28.8592441Z   GITHUB_TOKEN: ***
+2025-05-24T08:06:28.8592638Z   GITHUB_EVENT_NAME: issues
+2025-05-24T08:06:28.8592850Z   TRIGGER_COMMENT_ID: 
+2025-05-24T08:06:28.8593033Z   CLAUDE_BRANCH: 
+2025-05-24T08:06:28.8593216Z   IS_PR: false
+2025-05-24T08:06:28.8593380Z   DEFAULT_BRANCH: 
+2025-05-24T08:06:28.8593555Z   CLAUDE_SUCCESS: false
+2025-05-24T08:06:28.8593741Z   OUTPUT_FILE: 
+2025-05-24T08:06:28.8594000Z   TRIGGER_USERNAME: YoichiGoto
+2025-05-24T08:06:28.8594234Z ##[endgroup]
+2025-05-24T08:06:28.9333018Z Fetching issue comment 2906612232
+2025-05-24T08:06:29.2105341Z Successfully fetched as issue comment
+2025-05-24T08:06:29.6326841Z ✅ Updated issue comment 2906612232 with job link

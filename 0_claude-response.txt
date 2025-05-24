@@ -1,0 +1,143 @@
+﻿2025-05-24T08:06:22.6390477Z Current runner version: '2.324.0'
+2025-05-24T08:06:22.6414217Z ##[group]Runner Image Provisioner
+2025-05-24T08:06:22.6415211Z Hosted Compute Agent
+2025-05-24T08:06:22.6415804Z Version: 20250508.323
+2025-05-24T08:06:22.6416402Z Commit: 81b259f29879f73b4213d199e42d8c3465dae986
+2025-05-24T08:06:22.6417346Z Build Date: 2025-05-08T19:40:08Z
+2025-05-24T08:06:22.6418006Z ##[endgroup]
+2025-05-24T08:06:22.6418540Z ##[group]Operating System
+2025-05-24T08:06:22.6419149Z Ubuntu
+2025-05-24T08:06:22.6419633Z 24.04.2
+2025-05-24T08:06:22.6420045Z LTS
+2025-05-24T08:06:22.6420526Z ##[endgroup]
+2025-05-24T08:06:22.6420994Z ##[group]Runner Image
+2025-05-24T08:06:22.6421570Z Image: ubuntu-24.04
+2025-05-24T08:06:22.6422112Z Version: 20250511.1.0
+2025-05-24T08:06:22.6423112Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250511.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-05-24T08:06:22.6424615Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250511.1
+2025-05-24T08:06:22.6425706Z ##[endgroup]
+2025-05-24T08:06:22.6426737Z ##[group]GITHUB_TOKEN Permissions
+2025-05-24T08:06:22.6428833Z Contents: write
+2025-05-24T08:06:22.6429375Z Issues: write
+2025-05-24T08:06:22.6429812Z Metadata: read
+2025-05-24T08:06:22.6430454Z ##[endgroup]
+2025-05-24T08:06:22.6432484Z Secret source: Actions
+2025-05-24T08:06:22.6433496Z Prepare workflow directory
+2025-05-24T08:06:22.6768178Z Prepare all required actions
+2025-05-24T08:06:22.6804602Z Getting action download info
+2025-05-24T08:06:22.9603189Z Download action repository 'anthropics/claude-code-action@beta' (SHA:8e84799f37d42f24e0ebae41205346879bdcab5a)
+2025-05-24T08:06:23.4970871Z Getting action download info
+2025-05-24T08:06:23.6434856Z Download action repository 'oven-sh/setup-bun@v2' (SHA:735343b667d3e6f658f44d0eca948eb6282f2b76)
+2025-05-24T08:06:24.0395927Z Download action repository 'anthropics/claude-code-base-action@beta' (SHA:f99496e33ac73692b674913c57e0a58e6dacc8b1)
+2025-05-24T08:06:24.4622107Z Getting action download info
+2025-05-24T08:06:24.6018630Z ##[group]Download immutable action package 'actions/setup-node@v4'
+2025-05-24T08:06:24.6020430Z Version: 4.4.0
+2025-05-24T08:06:24.6022008Z Digest: sha256:9427cefe82346e992fb5b949e3569b39d537ae41aa3086483b14eceebfc16bc1
+2025-05-24T08:06:24.6023908Z Source commit SHA: 49933ea5288caeca8642d1e84afbd3f7d6820020
+2025-05-24T08:06:24.6025236Z ##[endgroup]
+2025-05-24T08:06:24.8123028Z Complete job name: claude-response
+2025-05-24T08:06:24.9054291Z ##[group]Run anthropics/claude-code-action@beta
+2025-05-24T08:06:24.9055589Z with:
+2025-05-24T08:06:24.9057746Z   anthropic_api_key: ***
+2025-05-24T08:06:24.9058784Z   github_token: ***
+2025-05-24T08:06:24.9059482Z   trigger_phrase: @claude
+2025-05-24T08:06:24.9060268Z   use_bedrock: false
+2025-05-24T08:06:24.9060974Z   use_vertex: false
+2025-05-24T08:06:24.9061660Z   timeout_minutes: 30
+2025-05-24T08:06:24.9062618Z ##[endgroup]
+2025-05-24T08:06:24.9192561Z ##[group]Run oven-sh/setup-bun@v2
+2025-05-24T08:06:24.9193416Z with:
+2025-05-24T08:06:24.9194030Z   bun-version: 1.2.11
+2025-05-24T08:06:24.9194755Z   no-cache: false
+2025-05-24T08:06:24.9195413Z ##[endgroup]
+2025-05-24T08:06:25.2167705Z Downloading a new version of Bun: https://bun.sh/download/1.2.11/linux/x64?avx2=true&profile=false
+2025-05-24T08:06:26.2715194Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/85a78741-258f-4a88-8c84-575987cc2f71.zip
+2025-05-24T08:06:27.0210287Z [command]/home/runner/.bun/bin/bun --revision
+2025-05-24T08:06:27.0247129Z 1.2.11+cb6abd211
+2025-05-24T08:06:27.0431099Z ##[group]Run cd /home/runner/work/_actions/anthropics/claude-code-action/beta
+2025-05-24T08:06:27.0431714Z [36;1mcd /home/runner/work/_actions/anthropics/claude-code-action/beta[0m
+2025-05-24T08:06:27.0432095Z [36;1mbun install[0m
+2025-05-24T08:06:27.0620890Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-05-24T08:06:27.0621327Z ##[endgroup]
+2025-05-24T08:06:27.0742135Z bun install v1.2.11 (cb6abd21)
+2025-05-24T08:06:27.3981781Z 
+2025-05-24T08:06:27.3982326Z + @types/bun@1.2.11
+2025-05-24T08:06:27.3983132Z + @types/node@20.17.44
+2025-05-24T08:06:27.3983503Z + @types/node-fetch@2.6.12
+2025-05-24T08:06:27.3983878Z + prettier@3.5.3
+2025-05-24T08:06:27.3984188Z + typescript@5.8.3
+2025-05-24T08:06:27.3984505Z + @actions/core@1.11.1
+2025-05-24T08:06:27.3984840Z + @actions/github@6.0.1
+2025-05-24T08:06:27.3985228Z + @modelcontextprotocol/sdk@1.11.0
+2025-05-24T08:06:27.3985630Z + @octokit/graphql@8.2.2
+2025-05-24T08:06:27.3986071Z + @octokit/rest@21.1.1
+2025-05-24T08:06:27.3986411Z + @octokit/webhooks-types@7.6.1
+2025-05-24T08:06:27.3986764Z + node-fetch@3.3.2
+2025-05-24T08:06:27.3987242Z + zod@3.24.4
+2025-05-24T08:06:27.3987408Z 
+2025-05-24T08:06:27.3987567Z 141 packages installed [325.00ms]
+2025-05-24T08:06:27.4148505Z ##[group]Run bun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/prepare.ts
+2025-05-24T08:06:27.4149217Z [36;1mbun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/prepare.ts[0m
+2025-05-24T08:06:27.4203945Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-05-24T08:06:27.4204258Z env:
+2025-05-24T08:06:27.4204432Z   TRIGGER_PHRASE: @claude
+2025-05-24T08:06:27.4204642Z   ASSIGNEE_TRIGGER: 
+2025-05-24T08:06:27.4204829Z   ALLOWED_TOOLS: 
+2025-05-24T08:06:27.4205023Z   CUSTOM_INSTRUCTIONS: 
+2025-05-24T08:06:27.4205208Z   DIRECT_PROMPT: 
+2025-05-24T08:06:27.4205666Z   OVERRIDE_GITHUB_TOKEN: ***
+2025-05-24T08:06:27.4205892Z   GITHUB_RUN_ID: 15225071784
+2025-05-24T08:06:27.4206086Z ##[endgroup]
+2025-05-24T08:06:27.5131562Z Using provided GITHUB_TOKEN for authentication
+2025-05-24T08:06:27.5148698Z Checking permissions for actor: YoichiGoto
+2025-05-24T08:06:27.6492621Z Permission level retrieved: admin
+2025-05-24T08:06:27.6492980Z Actor has write access: admin
+2025-05-24T08:06:27.6495358Z Issue body contains exact trigger phrase '@claude'
+2025-05-24T08:06:27.7295692Z Actor type: User
+2025-05-24T08:06:27.7296171Z Verified human actor: YoichiGoto
+2025-05-24T08:06:28.0898823Z ✅ Created initial comment with ID: 2906612232
+2025-05-24T08:06:28.2358090Z Successfully fetched issue #2 data
+2025-05-24T08:06:28.3588793Z Creating new branch for issue #2...
+2025-05-24T08:06:28.4613122Z Current SHA: a24fda01e2ef90df9f6339892dee8ec401f316e6
+2025-05-24T08:06:28.8378827Z fatal: not a git repository (or any of the parent directories): .git
+2025-05-24T08:06:28.8389758Z Error creating branch:  97 |       ref: `refs/heads/${newBranch}`,
+2025-05-24T08:06:28.8390784Z  98 |       sha: currentSHA,
+2025-05-24T08:06:28.8391198Z  99 |     });
+2025-05-24T08:06:28.8391515Z 100 | 
+2025-05-24T08:06:28.8391836Z 101 |     // Checkout the new branch
+2025-05-24T08:06:28.8392342Z 102 |     await $`git fetch origin ${newBranch}`;
+2025-05-24T08:06:28.8392835Z                      ^
+2025-05-24T08:06:28.8393225Z ShellError: Failed with exit code 128
+2025-05-24T08:06:28.8393687Z  exitCode: 128,
+2025-05-24T08:06:28.8394004Z    stdout: "",
+2025-05-24T08:06:28.8394590Z    stderr: "fatal: not a git repository (or any of the parent directories): .git\n",
+2025-05-24T08:06:28.8395266Z 
+2025-05-24T08:06:28.8395450Z       at new ShellError (13:16)
+2025-05-24T08:06:28.8395948Z       at new ShellPromise (75:16)
+2025-05-24T08:06:28.8396458Z       at BunShell (191:35)
+2025-05-24T08:06:28.8397776Z       at setupBranch (/home/runner/work/_actions/anthropics/claude-code-action/beta/src/github/operations/branch.ts:102:11)
+2025-05-24T08:06:28.8398860Z 
+2025-05-24T08:06:28.8450083Z ##[error]Process completed with exit code 1.
+2025-05-24T08:06:28.8540195Z ##[group]Run bun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/update-comment-link.ts
+2025-05-24T08:06:28.8540990Z [36;1mbun run /home/runner/work/_actions/anthropics/claude-code-action/beta/src/entrypoints/update-comment-link.ts[0m
+2025-05-24T08:06:28.8590697Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-05-24T08:06:28.8591005Z env:
+2025-05-24T08:06:28.8591208Z   REPOSITORY: YoichiGoto/claude-project
+2025-05-24T08:06:28.8591449Z   PR_NUMBER: 2
+2025-05-24T08:06:28.8591637Z   CLAUDE_COMMENT_ID: 2906612232
+2025-05-24T08:06:28.8592055Z   GITHUB_RUN_ID: 15225071784
+2025-05-24T08:06:28.8592444Z   GITHUB_TOKEN: ***
+2025-05-24T08:06:28.8592640Z   GITHUB_EVENT_NAME: issues
+2025-05-24T08:06:28.8592852Z   TRIGGER_COMMENT_ID: 
+2025-05-24T08:06:28.8593035Z   CLAUDE_BRANCH: 
+2025-05-24T08:06:28.8593218Z   IS_PR: false
+2025-05-24T08:06:28.8593382Z   DEFAULT_BRANCH: 
+2025-05-24T08:06:28.8593563Z   CLAUDE_SUCCESS: false
+2025-05-24T08:06:28.8593744Z   OUTPUT_FILE: 
+2025-05-24T08:06:28.8594002Z   TRIGGER_USERNAME: YoichiGoto
+2025-05-24T08:06:28.8594236Z ##[endgroup]
+2025-05-24T08:06:28.9333048Z Fetching issue comment 2906612232
+2025-05-24T08:06:29.2105369Z Successfully fetched as issue comment
+2025-05-24T08:06:29.6327158Z ✅ Updated issue comment 2906612232 with job link
+2025-05-24T08:06:29.6583285Z Post job cleanup.
+2025-05-24T08:06:29.6623779Z Cleaning up orphan processes
