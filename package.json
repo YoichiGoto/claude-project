@@ -1,1 +1,16 @@
-{"name": "claude-project", "version": "1.0.0", "description": "A sample project using Claude Code Action"}
+{
+  "name": "claude-project",
+  "version": "1.0.0",
+  "description": "A simple task management app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["task", "management", "app"],
+  "author": "",
+  "license": "MIT"
+}
